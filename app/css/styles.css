@@ -229,11 +229,11 @@ body {
   overflow: auto;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-  background: #F2994A;
+  background: #58A4B0;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #F2C94C, #F2994A);
+  background: -webkit-linear-gradient(to top, #373F51, #58A4B0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #F2C94C, #F2994A);
+  background: linear-gradient(to top, #373F51, #58A4B0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 #load_screen {
@@ -247,11 +247,11 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #F2994A;
+  background: #58A4B0;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #F2C94C, #F2994A);
+  background: -webkit-linear-gradient(to top, #373F51, #58A4B0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #F2C94C, #F2994A);
+  background: linear-gradient(to top, #373F51, #58A4B0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #load_screen .loader_wrap {
     text-align: center;
@@ -286,7 +286,7 @@ body {
 
 .sounds_container {
   margin: 0 auto;
-  padding: 250px 1em 0 1em;
+  padding: 0 1em 0 1em;
   max-width: 1024px; }
   @media screen and (min-width: 600px) and (max-width: 799px) {
     .sounds_container {
@@ -317,14 +317,14 @@ body {
         margin: 0 auto;
         content: ""; }
       .sounds_container > * {
-        width: calc( 50% - 0.5em);
+        width: calc( 33.33333% - 0.66667em);
         margin-left: 0.5em;
         margin-right: 0.5em; }
         .sounds_container > *:nth-child(1) {
           margin-left: 0; }
-        .sounds_container > *:nth-child(2n) {
+        .sounds_container > *:nth-child(3n) {
           margin-right: 0; }
-        .sounds_container > *:nth-child(2n + 1) {
+        .sounds_container > *:nth-child(3n + 1) {
           margin-left: 0; } }
   @media screen and (min-width: 1000px) {
     .sounds_container {
@@ -336,14 +336,14 @@ body {
         margin: 0 auto;
         content: ""; }
       .sounds_container > * {
-        width: calc( 50% - 0.5em);
+        width: calc( 33.33333% - 0.66667em);
         margin-left: 0.5em;
         margin-right: 0.5em; }
         .sounds_container > *:nth-child(1) {
           margin-left: 0; }
-        .sounds_container > *:nth-child(2n) {
+        .sounds_container > *:nth-child(3n) {
           margin-right: 0; }
-        .sounds_container > *:nth-child(2n + 1) {
+        .sounds_container > *:nth-child(3n + 1) {
           margin-left: 0; } }
 
 .sounds_container .sound_block {
@@ -352,7 +352,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 250px;
+  min-height: 150px;
   height: auto;
   margin-bottom: 1em; }
 
@@ -542,10 +542,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 250px;
+  min-height: 100px;
   background: #151513;
-  margin-top: 5em;
-  padding: 2em 0 1em 0; }
+  padding: 0 0 1em 0; }
   footer .social_icons {
     height: 50px;
     display: flex;
@@ -557,31 +556,17 @@ footer {
     footer .social_icons .fb_btn {
       padding-right: 20px;
       height: 22px; }
-    footer .social_icons .paypal-button {
-      position: relative;
-      text-align: center;
-      font-size: 0.9em;
-      padding: 4px 0;
-      box-sizing: border-box;
-      display: inline-block;
-      border-radius: 3px;
-      min-width: 75px;
-      margin-left: 20px;
-      background: #F44336;
-      text-decoration: none;
-      transform: translateY(-1px); }
   footer a {
     color: #ffffff;
     padding-left: 5px;
     padding-right: 5px; }
   footer .footer_container {
-    line-height: 2em;
+    line-height: 1em;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 4em 0em 4em;
-    min-height: 100px;
+    min-height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -621,32 +606,14 @@ header {
   align-items: center;
   min-height: 200px; }
   header h1 {
-    font-weight: 100;
-    font-size: 2.5em;
-    text-transform: uppercase; }
+    font-weight: 700;
+    font-size: 5em;
+    text-transform: lowercase;
+    font-family: 'Montserrat', sans-serif; }
   header p {
     line-height: 1.5em;
-    padding-bottom: 2em; }
+    padding-bottom: 3em;
+    font-size: 1.5em; }
 
 .volume_bar {
   opacity: 0; }
-
-.chrome_ext_btn {
-  font-size: 1.2em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: flex;
-  justify-content: center; }
-  .chrome_ext_btn a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 250px;
-    height: 60px;
-    border-radius: 5px;
-    border: 1px solid white !important; }
-  .chrome_ext_btn .fa {
-    font-size: 2.5em;
-    padding-right: 10px; }
