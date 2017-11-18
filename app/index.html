@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sounds Good Man</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Play and mix different sounds together to chill out or boost productivity.
+	whatever your thing is at the time, man.">
+
+  <meta name="keywords" content="Dallas, Crilley, Dallas Crilley, sounds, chill, play, productivity, ambient, background noise">
+
+  <meta name="author" content="Dallas Crilley">
+
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--endbuild-->
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	
+</head>
+<body>
+
+	<section id="load_screen">
+		<div class="loader_wrap">
+			<!-- Loader by https://codepen.io/ispal/pen/mVaaJe -->
+			<div class="loader">
+			  <div class="loader__bar"></div>
+			  <div class="loader__bar"></div>
+			  <div class="loader__bar"></div>
+			  <div class="loader__bar"></div>
+			  <div class="loader__bar"></div>
+			  <div class="loader__ball"></div>
+			</div>
+			<!-- Loader end -->
+			<div class="load_bar">
+				<div class="load_fill"></div>
+			</div>
+			<span class="load_status">0%</span>
+		</div>
+	</section>
+
+	<header>
+		<h1>sounds good, man</h1>
+		<p class="desc" style="margin-top:0px;">
+			play and mix different sounds together to chill out or boost productivity. <br />whatever your thing is at the time, man.
+		</p>
+	</header>
+	<section id="top_control">
+		<div class="mute_btn">
+			<a href="#!">
+				<i class="fa fa-volume-up unmuted" aria-hidden="true"></i>
+				<i class="fa fa-volume-off muted" aria-hidden="true"></i>
+			</a>
+		</div>
+
+		<div class="reset_btn">
+			<a href="#!">
+				<i class="fa fa-refresh" aria-hidden="true"></i>
+			</a>
+		</div>
+
+	</section>
+	<section id="main">
+
+		<div class="sounds_container">
+
+			<!-- RAIN -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/rain.mp3" type="audio/mpeg">
+					<source src="sounds/rain.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/rain.png" alt="Rain Sounds"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- THUNDER -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/thunder.mp3" type="audio/mpeg">
+					<source src="sounds/thunder.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/thunder.png" alt="Thunder Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- FOREST -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/forest.mp3" type="audio/mpeg">
+					<source src="sounds/forest.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/forest.png" alt="Forest Sounds"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- LEAVES -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/leaves.mp3" type="audio/mpeg">
+					<source src="sounds/leaves.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/leaves.png" alt="Leaves in Wind Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- DROPS -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/drops.mp3" type="audio/mpeg">
+					<source src="sounds/drops.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/drop.png" alt="Drops Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- FIRE -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/fire.mp3" type="audio/mpeg">
+					<source src="sounds/fire.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/fire.png" alt="Fire Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- CAT -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/cat_purr.mp3" type="audio/mpeg">
+					<source src="sounds/cat_purr.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/catpurr.png" alt="Cat Purr Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- SHEEP -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/sheep.mp3" type="audio/mpeg">
+					<source src="sounds/sheep.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/sheep.png" alt="Sheep Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- BIRDS -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/birds.mp3" type="audio/mpeg">
+					<source src="sounds/birds.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/bird.png" alt="Bird Sounds"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- BEACH -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/beach.mp3" type="audio/mpeg">
+					<source src="sounds/beach.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/beach.png" alt="Beach Sounds"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- RIVER -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/river.mp3" type="audio/mpeg">
+					<source src="sounds/river.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/river.png" alt="River Sounds"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- WINDCHIMES -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/windchimes.mp3" type="audio/mpeg">
+					<source src="sounds/windchimes.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/windchimes.png" alt="Windchimes Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- PINK NOISE -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/pinknoise.mp3" type="audio/mpeg">
+					<source src="sounds/pinknoise.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/pinknoise.png" alt="Pink Noise Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+
+			<!-- BROWN NOISE -->
+			<div class="sound_block">
+
+				<audio>
+					<source src="sounds/brownnoise.mp3" type="audio/mpeg">
+					<source src="sounds/brownnoise.ogg" type="audio/ogg">
+				</audio>
+				<div class="start_btn"><img src="images/brownnoise.png" alt="Brown Noise Sound"><a class="play" href="#!"></a></div>
+				<input class="volume_bar" type="range" value="0" max="1" step="0.001">
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer_container">
+			<span class="made_with">
+				Made with <i class="fa fa-heart" aria-hidden="true"></i> and <i class="fa fa-coffee" aria-hidden="true"></i>
+			</span>
+			<span class="copyright">
+				Copyright © 2017 by <a target="_blank" href="https://dallascrilley.com">Dallas Crilley</a>
+			</span>
+		</div>
+
+		<!--FontAwesome-->
+		<script src="https://use.fontawesome.com/11fc9055ad.js"></script>
+
+		<!--build:js js/main.min.js -->
+		<script src="js/main.js"></script>
+		<!-- endbuild -->
+	</footer>
+</body>
+</html>
